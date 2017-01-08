@@ -4,7 +4,13 @@ app.config(function($routeProvider){
 	.when("/", {
     templateUrl : "../templates/main.html"
   	})
-  	.when("/login", {
-    templateUrl : "../templates/login.html"
+  	.when("/clients", {
+    templateUrl : "../templates/clients.html"
+  	})
+  	.when("/key", {
+    templateUrl : "../templates/key-executives.html"
+  	})
+  	.when("/contact-us", {
+  		templateUrl : "../templates/contact-us.html"
   	});
 });
