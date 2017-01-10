@@ -3,8 +3,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
 </head>
-<body ng-app="itpnApp">
-  <div ng-view></div>
+<body >
+  <!-- <div ng-view ng-app="itpnApp"></div> -->
+  <div ng-app="plunker" ng-controller = "MainCtrl">
+ <input type="text" ng-model="name">
+ <p id="myValue">{{name}}</p>
+ <p>List:</p>
+ <p ng-repeat="myList in myList | orderBy:'toString()'"> {{myList}} </p>
+ <button ng-click="addInput()">Add</button>
+ </div>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
@@ -14,6 +21,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
   <script type="text/javascript" src="js/controllers/app.js"> </script>
- 
+  
 </body>
 </html>

@@ -14,3 +14,12 @@ app.config(function($routeProvider){
   		templateUrl : "../templates/contact-us.html"
   	});
 });
+
+var app1 = angular.module('plunker', []);
+app1.controller('MainCtrl', function($scope){
+	$scope.name = 'Divya';
+	$scope.myList = [];
+	$scope.addInput = function(){
+		$scope.myList.push($scope.name);
+	}
+});
